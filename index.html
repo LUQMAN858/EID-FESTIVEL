@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>عید الاضحی مبارک</title>
+  <title>Happy Independence Day</title>
   <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet" />
   <style>
     * {
@@ -13,7 +13,7 @@
     }
     body {
       font-family: 'Amiri Quran', serif;
-      background: radial-gradient(ellipse at center, #0d1b2a, #000);
+      background: radial-gradient(ellipse at center, #006600, #003300);
       overflow: hidden;
       color: white;
       text-align: center;
@@ -25,15 +25,15 @@
       margin-top: 25vh;
       animation: fadeIn 2s ease-in-out forwards;
       opacity: 0;
-      color: #fcd34d;
-      text-shadow: 0 0 10px #facc15, 0 0 20px #fbbf24;
+      color: #ffffff;
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #ffffff;
     }
     h2 {
       font-size: 1.4em;
       margin-top: 1rem;
       opacity: 0;
       animation: fadeIn 2s ease-in-out 2s forwards;
-      color: #cbd5e1;
+      color: #d4ffd4;
     }
     .stars {
       position: absolute;
@@ -63,68 +63,52 @@
         opacity: 1;
       }
     }
-    .moon {
+    .flag {
       position: absolute;
-      top: 50px;
-      right: 50px;
+      top: 40px;
+      right: 40px;
       width: 80px;
-      height: 80px;
-      background: radial-gradient(circle at 30% 30%, #fff, #aaa);
-      border-radius: 50%;
-      box-shadow: 0 0 20px #fff;
-      z-index: 1;
+      height: 50px;
+      background: white;
+      border: 2px solid #006600;
+      box-shadow: 0 0 10px #00ff00;
     }
-    .crescent {
+    .flag:before {
+      content: "";
       position: absolute;
-      top: 60px;
-      right: 60px;
-      width: 80px;
-      height: 80px;
-      background: #0d1b2a;
-      border-radius: 50%;
-      z-index: 2;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background: #006600;
     }
-    .message-box {
+    .flag:after {
+      content: "☪";
       position: absolute;
-      bottom: 40px;
-      width: 100%;
-      font-size: 1.1em;
-      color: #93c5fd;
-      animation: fadeIn 2s ease-in-out 3s forwards;
-      opacity: 0;
+      right: 12px;
+      top: 8px;
+      font-size: 1.5em;
+      color: #006600;
     }
-
     @media screen and (max-width: 600px) {
       h1 {
         font-size: 2em;
       }
-      .moon {
+      .flag {
         width: 60px;
-        height: 60px;
-        top: 30px;
-        right: 30px;
-      }
-      .crescent {
-        width: 60px;
-        height: 60px;
-        top: 38px;
-        right: 38px;
+        height: 38px;
+        top: 20px;
+        right: 20px;
       }
     }
   </style>
 </head>
 <body>
   <div class="stars"></div>
-  <div class="moon"></div>
-  <div class="crescent"></div>
+  <div class="flag"></div>
 
-  <h1>عید الاضحی مبارک</h1>
-  <h2>Eid al-Adha Mubarak to You and Your Family!</h2>
-
-  <div class="message-box">
-    🌙 May this Eid bring peace, blessings, and love to all Muslims around the world.  
-    <br />Celebrate with joy and kindness. ✨🕌
-  </div>
+  <h1>Happy Independence Day</h1>
+  <h2>14 August - Pakistan Zindabad</h2>
 
   <script>
     // Create stars dynamically
